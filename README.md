@@ -1,2 +1,2 @@
 # shubhtuls.github.io
-Experimental Website
+Personal Website
