@@ -40,25 +40,76 @@ shubhtuls AT fb DOT com
 <div class="section">
 <h2> Publications </h2>
 <!--------------------------------------------------------------------------->
-<div class="paper" id="arxiv19relnet">
-<img class="paper" title="3D-RelNet: Joint Object and Relational Network for 3D Prediction" src="figures/arxiv19relnet.png" />
+<div class="paper" id="iccv19csm">
+<img class="paper" title="Canonical Surface Mapping via Geometric Cycle Consistency" src="figures/iccv19csm.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Canonical Surface Mapping via Geometric Cycle Consistency</b> <br/> 
+Nilesh Kulkarni, Abhinav Gupta*, <strong>Shubham Tulsiani</strong>* <br/> 
+ICCV, 2019 <br/> 
+<a href="https://arxiv.org/pdf/1907.10043.pdf">pdf </a>  &nbsp <a href="https://nileshkulkarni.github.io/csm/">project page </a>  &nbsp <a href="javascript:toggleblock('iccv19csmAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19csmBib')">bibtex </a>  &nbsp <a href="https://www.youtube.com/watch?v=93M3ou4mg-w">video </a>  &nbsp <a href="https://github.com/nileshkulkarni/csm">code </a> </p>
+<div class="papermeta" id="iccv19csmMeta">
+<em id="iccv19csmAbs">We explore the task of Canonical Surface Mapping (CSM).  Specifically, given an image, we learn to map pixels on the object to their corresponding locations on an abstract 3D model of the category. But how do we learn such a mapping? A supervised approach would require extensive manual labeling which is not scalable beyond a few hand-picked categories. Our key insight is that the CSM task (pixel to 3D), when combined with 3D projection (3D to pixel), completes a cycle. Hence, we can exploit a geometric cycle consistency loss, thereby allowing us to forgo the dense manual supervision. Our approach allows us to train a CSM model for a diverse set of classes, without sparse or dense keypoint annotation, by leveraging only foreground mask labels for training. We show that our predictions also allow us to infer dense correspondence between two images, and compare the performance of our approach against several methods that predict correspondence by leveraging varying amount of supervision.</em>
+<pre xml:space="preserve" id="iccv19csmBib">
+
+@inProceedings{kulkarni2019csm,
+  title={Canonical Surface Mapping via Geometric Cycle Consistency},
+  author={Kulkarni, Nilesh and Gupta, Abhinav and Tulsiani, Shubham},
+  year={2019},
+  booktitle={International Conference on Computer Vision (ICCV)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('iccv19csmAbs');
+hideblock('iccv19csmBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="iccv19cvp">
+<img class="paper" title="Compositional Video Prediction" src="figures/iccv19cvp.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Compositional Video Prediction</b> <br/> 
+Yufei Ye, Maneesh Singh, Abhinav Gupta*, <strong>Shubham Tulsiani</strong>* <br/> 
+ICCV, 2019 <br/> 
+<a href="#">pdf (coming soon) </a>  &nbsp <a href="javascript:toggleblock('iccv19cvpAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19cvpBib')">bibtex </a> </p>
+<div class="papermeta" id="iccv19cvpMeta">
+<em id="iccv19cvpAbs">We present an approach for pixel-level future prediction given an input image of a scene. We observe that a scene is comprised of distinct entities that undergo motion and
+present an approach that operationalizes this insight. We implicitly predict future states of independent entities while reasoning about their interactions, and compose future video frames using these predicted states. We overcome the inherent multi-modality of the task using a global trajectory-level latent random variable, and show that this allows us to sample diverse and plausible futures. We empirically validate our approach against alternate representations and ways of incorporating  multi-modality. We examine two datasets, one comprising of stacked objects that may fall, and the other containing videos of humans performing activities in a gym, and show that our approach allows realistic stochastic video prediction across these diverse settings.</em>
+<pre xml:space="preserve" id="iccv19cvpBib">
+
+@inProceedings{ye2019cvp,
+  title={Compositional Video Prediction},
+  author={Ye, Yufei and Singh, Maneesh and Gupta, Abhinav and Tulsiani, Shubham},
+  year={2019},
+  booktitle={International Conference on Computer Vision (ICCV)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('iccv19cvpAbs');
+hideblock('iccv19cvpBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="iccv19relnet">
+<img class="paper" title="3D-RelNet: Joint Object and Relational Network for 3D Prediction" src="figures/iccv19relnet.png" />
 <p> <strong style="color:red">[New]</strong> <b id="papertitle">3D-RelNet: Joint Object and Relational Network for 3D Prediction</b> <br/> 
 Nilesh Kulkarni, Ishan Misra, <strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
-arXiv preprint, 2019 <br/> 
-<a href="https://arxiv.org/pdf/1906.02729">pdf </a>  &nbsp <a href="https://nileshkulkarni.github.io/relative3d/">project page </a>  &nbsp <a href="javascript:toggleblock('arxiv19relnetAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('arxiv19relnetBib')">bibtex </a>  &nbsp <a href="https://github.com/nileshkulkarni/relative3d">code </a> </p>
-<div class="papermeta" id="arxiv19relnetMeta">
-<em id="arxiv19relnetAbs">We propose an approach to predict the 3D shape and pose for the objects present in a scene. Existing learning based methods that pursue this goal make independent predictions per object, and do not leverage the relationships amongst them. We argue that reasoning about these relationships is crucial, and present an approach to incorporate these in a 3D prediction framework. In addition to independent per-object predictions, we predict pairwise relations in the form of relative 3D pose, and demonstrate that these can be easily incorporated to improve object level estimates. We report performance across different datasets (SUNCG, NYUv2), and show that our approach significantly improves over independent prediction approaches while also outperforming alternate implicit reasoning methods.</em>
-<pre xml:space="preserve" id="arxiv19relnetBib">
+ICCV, 2019 <br/> 
+<a href="https://arxiv.org/pdf/1906.02729">preprint </a>  &nbsp <a href="https://nileshkulkarni.github.io/relative3d/">project page </a>  &nbsp <a href="javascript:toggleblock('iccv19relnetAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19relnetBib')">bibtex </a>  &nbsp <a href="https://github.com/nileshkulkarni/relative3d">code </a> </p>
+<div class="papermeta" id="iccv19relnetMeta">
+<em id="iccv19relnetAbs">We propose an approach to predict the 3D shape and pose for the objects present in a scene. Existing learning based methods that pursue this goal make independent predictions per object, and do not leverage the relationships amongst them. We argue that reasoning about these relationships is crucial, and present an approach to incorporate these in a 3D prediction framework. In addition to independent per-object predictions, we predict pairwise relations in the form of relative 3D pose, and demonstrate that these can be easily incorporated to improve object level estimates. We report performance across different datasets (SUNCG, NYUv2), and show that our approach significantly improves over independent prediction approaches while also outperforming alternate implicit reasoning methods.</em>
+<pre xml:space="preserve" id="iccv19relnetBib">
 
-@article{kulkarni2019relnet,
+@inProceedings{kulkarni2019relnet,
   title={3D-RelNet: Joint Object and Relational Network for 3D Prediction},
   author={Nilesh Kulkarni, Ishan Misra, Shubham Tulsiani, Abhinav Gupta},
-  journal={arXiv preprint arXiv:1906.02729},
+  booktitle={ICCV},
   year={2019}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
-hideblock('arxiv19relnetAbs');
-hideblock('arxiv19relnetBib');
+hideblock('iccv19relnetAbs');
+hideblock('iccv19relnetBib');
 </script>
 </div>
 </div>
@@ -486,8 +537,8 @@ hideblock('cvpr15vpsBib');
 <img class="paper" title="Category-Specific Object Reconstruction from a Single Image" src="figures/cvpr15reconstruction.png" />
 <p><b id="papertitle">Category-Specific Object Reconstruction from a Single Image</b> <br/> 
 Abhishek Kar*, <strong>Shubham Tulsiani</strong>*, Jo&atilde;o Carreira, Jitendra Malik <br/> 
-CVPR, 2015 <br/> 
-<a href="https://arxiv.org/pdf/1411.6069.pdf">pdf </a>  &nbsp <a href="http://www.cs.berkeley.edu/~akar/categoryShapes/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr15csdmAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr15csdmBib')">bibtex </a>  &nbsp <a href="https://github.com/akar43/CategoryShapes">code </a> </p>
+CVPR, 2015  <strong style="color:red">(Best Student Paper Award)</strong><br/> 
+<a href="https://arxiv.org/pdf/1411.6069.pdf">pdf </a>  &nbsp <a href="http://www.cs.berkeley.edu/~akar/categoryShapes/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr15csdmAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr15csdmBib')">bibtex </a>  &nbsp <a href="https://github.com/akar43/CategoryShapes">code </a>  &nbsp <a href="Best Student Paper Award">note </a> </p>
 <div class="papermeta" id="cvpr15csdmMeta">
 <em id="cvpr15csdmAbs">Object reconstruction from a single image - in the wild - is a problem where we can make progress and get meaningful results today. This is the main message of this paper, which introduces an automated pipeline with pixels as inputs and 3D surfaces of various rigid categories as outputs in images of realistic scenes. At the core of our approach are deformable 3D models that can be learned from 2D annotations available in existing object detection datasets, that can be driven by noisy automatic object segmentations and which we complement with a bottom-up module for recovering high-frequency shape details. We perform a comprehensive quantitative analysis and ablation study of our approach using the recently introduced PASCAL 3D+ dataset and show very encouraging automatic reconstructions on PASCAL VOC.</em>
 <pre xml:space="preserve" id="cvpr15csdmBib">
