@@ -28,9 +28,18 @@ thead, tr, th, td {
 body {
   position: relative;
   margin: 3em auto 2em auto;
-  width: 1000px;
+  width: 1024px;
   font-size: 16px;
 	line-height:20px;
+}
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
 }
 
 a
@@ -92,6 +101,8 @@ div.section {
   clear: both;
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 div.spanner {
