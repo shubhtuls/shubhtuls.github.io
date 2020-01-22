@@ -33,6 +33,13 @@ body {
 	line-height:20px;
 }
 
+hr
+{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+}
+
 .static {
   position:absolute;
   background: white;
@@ -113,6 +120,14 @@ div.paper {
   clear: both;
   background: #fff;
   padding: 1em 1em 0em 1em;
+}
+
+div.year_heading
+{
+	color: #3B3B3B;
+	font-weight: 500;
+	font-size:20px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 div.papermeta {

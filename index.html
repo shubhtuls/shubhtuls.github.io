@@ -38,7 +38,84 @@ shubhtuls AT fb DOT com
 </div>
 
 <div class="section">
-<h2> Publications </h2>
+<h2> Publications </h2><br>
+<!--------------------------------------------------------------------------->
+<div class="paper" id="iclr20synergy">
+<img class="paper" src="figures/iclr20synergy.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Intrinsic Motivation for Encouraging Synergistic Behavior</b> <br/> 
+Rohan Chitnis, <strong>Shubham Tulsiani</strong>, Saurabh Gupta, Abhinav Gupta <br/> 
+ICLR, 2020 <br/> 
+<a href="https://openreview.net/pdf?id=SJleNCNtDH">preprint </a>  &nbsp <a href="https://sites.google.com/view/iclr2020-synergistic">project page </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyBib')">bibtex </a> </p>
+<div class="papermeta" id="iclr20synergyMeta">
+<em id="iclr20synergyAbs">We study the role of intrinsic motivation as an exploration bias for reinforcement learning in sparse-reward synergistic tasks, which are tasks where multiple agents must work together to achieve a goal they could not individually. Our key idea is that a good guiding principle for intrinsic motivation in synergistic tasks is to take actions which affect the world in ways that would not be achieved if the agents were acting on their own. Thus, we propose to incentivize agents to take (joint) actions whose effects cannot be predicted via a composition of the predicted effect for each individual agent. We study two instantiations of this idea, one based on the true states encountered, and another based on a dynamics model trained concurrently with the policy. While the former is simpler, the latter has the benefit of being analytically differentiable with respect to the action taken. We validate our approach in robotic bimanual manipulation tasks with sparse rewards; we find that our approach yields more efficient learning than both 1) training with only the sparse reward and 2) using the typical surprise-based formulation of intrinsic motivation, which does not bias toward synergistic behavior.</em>
+<pre xml:space="preserve" id="iclr20synergyBib">
+
+@inproceedings{chitnis20synergy,
+  title={Intrinsic Motivation for Encouraging Synergistic Behavior},
+  author={Chitnis, Rohan and Tulsiani, Shubham and Gupta, Saurabh and Gupta, Abhinav},
+  booktitle={ICLR},
+  year={2020}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('iclr20synergyAbs');
+hideblock('iclr20synergyBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="iclr20motor">
+<img class="paper" src="figures/iclr20motor.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Discovering Motor Programs by Recomposing Demonstrations</b> <br/> 
+Tanmay Shankar, <strong>Shubham Tulsiani</strong>, Lerrel Pinto, Abhinav Gupta <br/> 
+ICLR, 2020 <br/> 
+<a href="https://openreview.net/pdf?id=rkgHY0NYwr">preprint </a>  &nbsp <a href="javascript:toggleblock('iclr20motorAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20motorBib')">bibtex </a> </p>
+<div class="papermeta" id="iclr20motorMeta">
+<em id="iclr20motorAbs">We learn a space of motor primitives from unannotated robot demonstrations, and show these primitives are semantically meaningful and can be composed for new robot tasks.
+Abstract: In this paper, we present an approach to learn recomposable motor primitives across large-scale and diverse manipulation demonstrations. Current approaches to decomposing demonstrations into primitives often assume manually defined primitives and bypass the difficulty of discovering these primitives. On the other hand, approaches in primitive discovery put restrictive assumptions on the complexity of a primitive, which limit applicability to narrow tasks. Our approach attempts to circumvent these challenges by jointly learning both the underlying motor primitives and recomposing these primitives to form the original demonstration. Through constraints on both the parsimony of primitive decomposition and the simplicity of a given primitive, we are able to learn a diverse set of motor primitives, as well as a coherent latent representation for these primitives. We demonstrate, both qualitatively and quantitatively, that our learned primitives capture semantically meaningful aspects of a demonstration. This allows us to compose these primitives in a hierarchical reinforcement learning setup to efficiently solve robotic manipulation tasks like reaching and pushing.</em>
+<pre xml:space="preserve" id="iclr20motorBib">
+
+@inproceedings{shankar20motor,
+  title={Discovering Motor Programs by Recomposing Demonstrations},
+  author={Shankar, Tanmay and Tulsiani, Shubham and Pinto, Lerrel and Gupta, Abhinav},
+  booktitle={ICLR},
+  year={2020}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('iclr20motorAbs');
+hideblock('iclr20motorBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="icra20schema">
+<img class="paper static" src="figures/icra20schema.png" />
+<img class="paper" src="figures/icra20schema.gif" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Efficient Bimanual Manipulation using Learned Task Schemas</b> <br/> 
+Rohan Chitnis, <strong>Shubham Tulsiani</strong>, Saurabh Gupta, Abhinav Gupta <br/> 
+ICRA, 2020 <br/> 
+<a href="https://arxiv.org/pdf/1909.13874.pdf">preprint </a>  &nbsp <a href="javascript:toggleblock('icra20schemaAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('icra20schemaBib')">bibtex </a>  &nbsp <a href="https://www.youtube.com/watch?v=TBUEHk37a64">video </a> </p>
+<div class="papermeta" id="icra20schemaMeta">
+<em id="icra20schemaAbs">We address the problem of effectively composing skills to solve sparse-reward tasks in the real world. Given a set of parameterized skills (such as exerting a force or doing a top grasp at a location), our goal is to learn policies that invoke these skills to efficiently solve such tasks. Our insight is that for many tasks, the learning process can be decomposed into learning a state-independent task schema (a sequence of skills to execute) and a policy to choose the parameterizations of the skills in a state-dependent manner. For such tasks, we show that explicitly modeling the schema's state-independence can yield significant improvements in sample efficiency for model-free reinforcement learning algorithms. Furthermore, these schemas can be transferred to solve related tasks, by simply re-learning the parameterizations with which the skills are invoked. We find that doing so enables learning to solve sparse-reward tasks on real-world robotic systems very efficiently. We validate our approach experimentally over a suite of robotic bimanual manipulation tasks, both in simulation and on real hardware.</em>
+<pre xml:space="preserve" id="icra20schemaBib">
+
+@inproceedings{chitnis20schema,
+  title={Efficient Bimanual Manipulation Using Learned Task Schemas},
+  author={Chitnis, Rohan and Tulsiani, Shubham and Gupta, Saurabh and Gupta, Abhinav},
+  booktitle={ICRA},
+  year={2020}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('icra20schemaAbs');
+hideblock('icra20schemaBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
 <!--------------------------------------------------------------------------->
 <div class="paper" id="corl19ocm">
 <img class="paper static" src="figures/corl19ocm.png" />
@@ -149,7 +226,7 @@ hideblock('iccv19relnetBib');
 <p> <strong style="color:red">[New]</strong> <b id="papertitle">Order-Aware Generative Modeling Using the 3D-Craft Dataset</b> <br/> 
 Zhuoyuan Chen*, Demi Guo*, Tong Xiao*, et. al. <br/> 
 ICCV, 2019 <br/> 
-<a href="#">pdf </a>  &nbsp <a href="javascript:toggleblock('iccv19craftAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19craftBib')">bibtex </a> </p>
+<a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Chen_Order-Aware_Generative_Modeling_Using_the_3D-Craft_Dataset_ICCV_2019_paper.pdf">pdf </a>  &nbsp <a href="javascript:toggleblock('iccv19craftAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19craftBib')">bibtex </a> </p>
 <div class="papermeta" id="iccv19craftMeta">
 <em id="iccv19craftAbs">In this paper, we study the problem of sequentially building houses in the game of Minecraft, and demonstrate that learning the ordering can make for more effective autoregressive models. Given a partially built house made by a human player, our system tries to place additional blocks in a human-like manner to complete the house. We introduce a new dataset, HouseCraft, for this new task. HouseCraft contains the sequential order in which 2,500 Minecraft houses were built from scratch by humans. The human action sequences enable us to learn an order-aware generative model called Voxel-CNN. In contrast to many generative models where the sequential generation ordering either does not matter (e.g. holistic generation with GANs), or is manually/arbitrarily set by simple rules (e.g. raster-scan order), our focus is on an ordered generation that imitates humans. To evaluate if a generative model can accurately predict human-like actions, we propose several novel quantitative metrics. We demonstrate that our Voxel-CNN model is simple and effective at this creative task, and can serve as a strong baseline for future research in this direction.</em>
 <pre xml:space="preserve" id="iccv19craftBib">
@@ -171,7 +248,7 @@ hideblock('iccv19craftBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="arxiv19mvs">
 <img class="paper" src="figures/arxiv19mvs.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Learning Unsupervised Multi-View Stereopsis via Robust Photometric Consistency</b> <br/> 
+<p><b id="papertitle">Learning Unsupervised Multi-View Stereopsis via Robust Photometric Consistency</b> <br/> 
 Tejas Khot*, Shubham Agrawal*, <strong>Shubham Tulsiani</strong>, Christoph Mertz, Simon Lucey, Martial Hebert <br/> 
 arXiv preprint, 2019 <br/> 
 <a href="https://arxiv.org/pdf/1905.02706.pdf">pdf </a>  &nbsp <a href="https://tejaskhot.github.io/unsup_mvs/">project page </a>  &nbsp <a href="javascript:toggleblock('arxiv19mvsAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('arxiv19mvsBib')">bibtex </a>  &nbsp <a href="https://github.com/tejaskhot/unsup_mvs">code </a> </p>
@@ -674,7 +751,6 @@ hideblock('uist13colorsBib');
 </div>
 </div>
 <!--------------------------------------------------------------------------->
-
 
 <!--------------------------------------------------------------------------->
 <!--- TEMPLATE
