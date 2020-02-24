@@ -38,14 +38,64 @@ shubhtuls AT fb DOT com
 </div>
 
 <div class="section">
-<h2> Publications </h2><br>
+<h2> Publications </h2><br><div class="year_heading"><br>2020<hr width="220px" align="left"></div>
+<!--------------------------------------------------------------------------->
+<div class="paper" id="cvpr20acsm">
+<img class="paper" src="figures/cvpr20acsm.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Articulation-aware Canonical Surface Mapping</b> <br/> 
+Nilesh Kulkarni, Abhinav Gupta, David Fouhey, <strong>Shubham Tulsiani</strong> <br/> 
+CVPR, 2020 <br/> 
+<a href="#">pdf </a>  &nbsp <a href="javascript:toggleblock('cvpr20acsmAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr20acsmBib')">bibtex </a> </p>
+<div class="papermeta" id="cvpr20acsmMeta">
+<em id="cvpr20acsmAbs">We tackle the tasks of: 1) predicting a Canonical Surface Mapping (CSM) that indicates the mapping from 2D pixels to corresponding points on a canonical template shape , and 2) inferring the articulation and pose of the template corresponding to the input image. While previous approaches rely on leveraging keypoint supervision for learning, we present an approach that can learn without such annotations. Our key insight is that these tasks are geometrically related, and we can obtain supervisory signal via enforcing consistency among the predictions. We present results across a diverse set of animate object categories, showing that our method can learn articulation and CSM prediction from image collections using only foreground mask labels for training. We empirically show that allowing articulation helps learn more accurate CSM prediction, and that enforcing the consistency with predicted CSM is similarly critical for learning meaningful articulation.</em>
+<pre xml:space="preserve" id="cvpr20acsmBib">
+
+@inProceedings{kulkarni2020acsm,
+  title={Articulation-aware Canonical Surface Mapping},
+  author={Kulkarni, Nilesh and Gupta, Abhinav and Fouhey, David and Tulsiani, Shubham},
+  year={2020},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('cvpr20acsmAbs');
+hideblock('cvpr20acsmBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="cvpr20force">
+<img class="paper" src="figures/cvpr20force.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Use the Force, Luke! Learning to Predict Physical Forces by Simulating Effects</b> <br/> 
+Kiana Ehsani, <strong>Shubham Tulsiani</strong>, Saurabh Gupta, Abhinav Gupta <br/> 
+CVPR, 2020 <br/> 
+<a href="#">pdf </a>  &nbsp <a href="javascript:toggleblock('cvpr20forceAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr20forceBib')">bibtex </a> </p>
+<div class="papermeta" id="cvpr20forceMeta">
+<em id="cvpr20forceAbs">When we humans look at a video of human-object interaction, we can not only infer what is happening but we can even extract actionable information and imitate those interactions. On the other hand, current recognition or geometric approaches lack the physicality of action representation. In this paper, we take a step towards more physical understanding of actions. We address the problem of inferring contact points and the physical forces from videos of humans interacting with objects. One of the main challenges in tackling this problem is obtaining ground-truth labels for forces. We sidestep this problem by instead using a physics simulator for supervision. Specifically, we use a simulator to predict effects, and enforce that estimated forces must lead to same effect as depicted in the video. Our quantitative and qualitative results show that (a) we can predict meaningful forces from videos whose effects lead to accurate imitation of the motions observed, (b) by jointly optimizing for contact point and force prediction, we can improve the performance on both tasks in comparison to independent training, and (c) we can learn a representation from this model that generalizes to novel objects using few shot examples.</em>
+<pre xml:space="preserve" id="cvpr20forceBib">
+
+@inProceedings{ehsani2020force,
+  title={Use the Force, Luke! Learning to Predict Physical Forces by Simulating Effects},
+  author={Ehsani, Kiana and  Tulsiani, Shubham and Gupta, Saurabh and Gupta, Abhinav},
+  year={2020},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('cvpr20forceAbs');
+hideblock('cvpr20forceBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
 <!--------------------------------------------------------------------------->
 <div class="paper" id="iclr20synergy">
 <img class="paper" src="figures/iclr20synergy.png" />
 <p> <strong style="color:red">[New]</strong> <b id="papertitle">Intrinsic Motivation for Encouraging Synergistic Behavior</b> <br/> 
 Rohan Chitnis, <strong>Shubham Tulsiani</strong>, Saurabh Gupta, Abhinav Gupta <br/> 
 ICLR, 2020 <br/> 
-<a href="https://openreview.net/pdf?id=SJleNCNtDH">preprint </a>  &nbsp <a href="https://sites.google.com/view/iclr2020-synergistic">project page </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyBib')">bibtex </a> </p>
+<a href="https://openreview.net/pdf?id=SJleNCNtDH">pdf </a>  &nbsp <a href="https://sites.google.com/view/iclr2020-synergistic">project page </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyBib')">bibtex </a> </p>
 <div class="papermeta" id="iclr20synergyMeta">
 <em id="iclr20synergyAbs">We study the role of intrinsic motivation as an exploration bias for reinforcement learning in sparse-reward synergistic tasks, which are tasks where multiple agents must work together to achieve a goal they could not individually. Our key idea is that a good guiding principle for intrinsic motivation in synergistic tasks is to take actions which affect the world in ways that would not be achieved if the agents were acting on their own. Thus, we propose to incentivize agents to take (joint) actions whose effects cannot be predicted via a composition of the predicted effect for each individual agent. We study two instantiations of this idea, one based on the true states encountered, and another based on a dynamics model trained concurrently with the policy. While the former is simpler, the latter has the benefit of being analytically differentiable with respect to the action taken. We validate our approach in robotic bimanual manipulation tasks with sparse rewards; we find that our approach yields more efficient learning than both 1) training with only the sparse reward and 2) using the typical surprise-based formulation of intrinsic motivation, which does not bias toward synergistic behavior.</em>
 <pre xml:space="preserve" id="iclr20synergyBib">
@@ -70,7 +120,7 @@ hideblock('iclr20synergyBib');
 <p> <strong style="color:red">[New]</strong> <b id="papertitle">Discovering Motor Programs by Recomposing Demonstrations</b> <br/> 
 Tanmay Shankar, <strong>Shubham Tulsiani</strong>, Lerrel Pinto, Abhinav Gupta <br/> 
 ICLR, 2020 <br/> 
-<a href="https://openreview.net/pdf?id=rkgHY0NYwr">preprint </a>  &nbsp <a href="javascript:toggleblock('iclr20motorAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20motorBib')">bibtex </a> </p>
+<a href="https://openreview.net/pdf?id=rkgHY0NYwr">pdf </a>  &nbsp <a href="javascript:toggleblock('iclr20motorAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20motorBib')">bibtex </a> </p>
 <div class="papermeta" id="iclr20motorMeta">
 <em id="iclr20motorAbs">We learn a space of motor primitives from unannotated robot demonstrations, and show these primitives are semantically meaningful and can be composed for new robot tasks.
 Abstract: In this paper, we present an approach to learn recomposable motor primitives across large-scale and diverse manipulation demonstrations. Current approaches to decomposing demonstrations into primitives often assume manually defined primitives and bypass the difficulty of discovering these primitives. On the other hand, approaches in primitive discovery put restrictive assumptions on the complexity of a primitive, which limit applicability to narrow tasks. Our approach attempts to circumvent these challenges by jointly learning both the underlying motor primitives and recomposing these primitives to form the original demonstration. Through constraints on both the parsimony of primitive decomposition and the simplicity of a given primitive, we are able to learn a diverse set of motor primitives, as well as a coherent latent representation for these primitives. We demonstrate, both qualitatively and quantitatively, that our learned primitives capture semantically meaningful aspects of a demonstration. This allows us to compose these primitives in a hierarchical reinforcement learning setup to efficiently solve robotic manipulation tasks like reaching and pushing.</em>
@@ -115,12 +165,12 @@ hideblock('icra20schemaBib');
 </div>
 </div>
 <!--------------------------------------------------------------------------->
-
+<div class="year_heading"><br>2019<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="corl19ocm">
 <img class="paper static" src="figures/corl19ocm.png" />
 <img class="paper" src="figures/corl19ocm.gif" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Object-centric Forward Modeling for Model Predictive Control</b> <br/> 
+<p><b id="papertitle">Object-centric Forward Modeling for Model Predictive Control</b> <br/> 
 Yufei Ye, Dhiraj Gandhi, Abhinav Gupta, <strong>Shubham Tulsiani</strong> <br/> 
 CORL, 2019 <br/> 
 <a href="https://arxiv.org/pdf/1910.03568.pdf">pdf </a>  &nbsp <a href="https://judyye.github.io/ocmpc/">project page </a>  &nbsp <a href="javascript:toggleblock('corl19ocmAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('corl19ocmBib')">bibtex </a> </p>
@@ -146,7 +196,7 @@ hideblock('corl19ocmBib');
 <div class="paper" id="iccv19csm">
 <img class="paper static" src="figures/iccv19csm.png" />
 <img class="paper" src="figures/iccv19csm.gif" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Canonical Surface Mapping via Geometric Cycle Consistency</b> <br/> 
+<p><b id="papertitle">Canonical Surface Mapping via Geometric Cycle Consistency</b> <br/> 
 Nilesh Kulkarni, Abhinav Gupta*, <strong>Shubham Tulsiani</strong>* <br/> 
 ICCV, 2019 <br/> 
 <a href="https://arxiv.org/pdf/1907.10043.pdf">pdf </a>  &nbsp <a href="https://nileshkulkarni.github.io/csm/">project page </a>  &nbsp <a href="javascript:toggleblock('iccv19csmAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19csmBib')">bibtex </a>  &nbsp <a href="https://www.youtube.com/watch?v=93M3ou4mg-w">video </a>  &nbsp <a href="https://github.com/nileshkulkarni/csm">code </a> </p>
@@ -172,7 +222,7 @@ hideblock('iccv19csmBib');
 <div class="paper" id="iccv19cvp">
 <img class="paper static" src="figures/iccv19cvp_static.png" />
 <img class="paper" src="https://judyye.github.io/images/0_cvp.gif" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Compositional Video Prediction</b> <br/> 
+<p><b id="papertitle">Compositional Video Prediction</b> <br/> 
 Yufei Ye, Maneesh Singh, Abhinav Gupta*, <strong>Shubham Tulsiani</strong>* <br/> 
 ICCV, 2019 <br/> 
 <a href="https://arxiv.org/pdf/1908.08522.pdf">pdf </a>  &nbsp <a href="https://judyye.github.io/CVP/">project page </a>  &nbsp <a href="javascript:toggleblock('iccv19cvpAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19cvpBib')">bibtex </a>  &nbsp <a href="https://github.com/JudyYe/CVP">code </a> </p>
@@ -198,7 +248,7 @@ hideblock('iccv19cvpBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="iccv19relnet">
 <img class="paper" src="figures/iccv19relnet.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">3D-RelNet: Joint Object and Relational Network for 3D Prediction</b> <br/> 
+<p><b id="papertitle">3D-RelNet: Joint Object and Relational Network for 3D Prediction</b> <br/> 
 Nilesh Kulkarni, Ishan Misra, <strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
 ICCV, 2019 <br/> 
 <a href="https://arxiv.org/pdf/1906.02729">pdf </a>  &nbsp <a href="https://nileshkulkarni.github.io/relative3d/">project page </a>  &nbsp <a href="javascript:toggleblock('iccv19relnetAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19relnetBib')">bibtex </a>  &nbsp <a href="https://github.com/nileshkulkarni/relative3d">code </a> </p>
@@ -223,7 +273,7 @@ hideblock('iccv19relnetBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="iccv19craft">
 <img class="paper" src="figures/iccv19craft.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Order-Aware Generative Modeling Using the 3D-Craft Dataset</b> <br/> 
+<p><b id="papertitle">Order-Aware Generative Modeling Using the 3D-Craft Dataset</b> <br/> 
 Zhuoyuan Chen*, Demi Guo*, Tong Xiao*, et. al. <br/> 
 ICCV, 2019 <br/> 
 <a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Chen_Order-Aware_Generative_Modeling_Using_the_3D-Craft_Dataset_ICCV_2019_paper.pdf">pdf </a>  &nbsp <a href="javascript:toggleblock('iccv19craftAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv19craftBib')">bibtex </a> </p>
@@ -240,31 +290,6 @@ ICCV, 2019 <br/>
 <script language="javascript" type="text/javascript" xml:space="preserve">
 hideblock('iccv19craftAbs');
 hideblock('iccv19craftBib');
-</script>
-</div>
-</div>
-<!--------------------------------------------------------------------------->
-
-<!--------------------------------------------------------------------------->
-<div class="paper" id="arxiv19mvs">
-<img class="paper" src="figures/arxiv19mvs.png" />
-<p><b id="papertitle">Learning Unsupervised Multi-View Stereopsis via Robust Photometric Consistency</b> <br/> 
-Tejas Khot*, Shubham Agrawal*, <strong>Shubham Tulsiani</strong>, Christoph Mertz, Simon Lucey, Martial Hebert <br/> 
-arXiv preprint, 2019 <br/> 
-<a href="https://arxiv.org/pdf/1905.02706.pdf">pdf </a>  &nbsp <a href="https://tejaskhot.github.io/unsup_mvs/">project page </a>  &nbsp <a href="javascript:toggleblock('arxiv19mvsAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('arxiv19mvsBib')">bibtex </a>  &nbsp <a href="https://github.com/tejaskhot/unsup_mvs">code </a> </p>
-<div class="papermeta" id="arxiv19mvsMeta">
-<em id="arxiv19mvsAbs">We present a learning based approach for multi-view stereopsis (MVS). While current deep MVS methods achieve impressive results, they crucially rely on ground-truth 3D training data, and acquisition of such precise 3D geometry for supervision is a major hurdle. Our framework instead leverages photometric consistency between multiple views as supervisory signal for learning depth prediction in a wide baseline MVS setup. However, naively applying photo consistency constraints is undesirable due to occlusion and lighting changes across views. To overcome this, we propose a robust loss formulation that: a) enforces first order consistency and b) for each point, selectively enforces consistency with some views, thus implicitly handling occlusions. We demonstrate our ability to learn MVS without 3D supervision using a real dataset, and show that each component of our proposed robust loss results in a significant improvement. We qualitatively observe that our reconstructions are often more complete than the acquired ground truth, further showing the merits of this approach. Lastly, our learned model generalizes to novel settings, and our approach allows adaptation of existing CNNs to datasets without ground-truth 3D by unsupervised finetuning.</em>
-<pre xml:space="preserve" id="arxiv19mvsBib">
-
-@article{khot2019learning,
-  title={Learning Unsupervised Multi-View Stereopsis via Robust Photometric Consistency},
-  author={Khot, Tejas and Agrawal, Shubham and Tulsiani, Shubham and Mertz, Christoph and Lucey, Simon and Hebert, Martial},
-  journal={arXiv preprint arXiv:1905.02706},
-  year={2019}
-}</pre></td>
-<script language="javascript" type="text/javascript" xml:space="preserve">
-hideblock('arxiv19mvsAbs');
-hideblock('arxiv19mvsBib');
 </script>
 </div>
 </div>
@@ -325,7 +350,7 @@ hideblock('pami19hspBib');
 </div>
 </div>
 <!--------------------------------------------------------------------------->
-
+<div class="year_heading"><br>2018<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="eccv18lsi">
 <img class="paper" src="https://shubhtuls.github.io/lsi/resources/images/teaser.png" />
@@ -399,7 +424,7 @@ CVPR, 2018 <br/>
   author = {Shubham Tulsiani
   and Alexei A. Efros
   and Jitendra Malik},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)},
   year={2018}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
@@ -428,7 +453,7 @@ CVPR, 2018 <br/>
   and David Fouhey
   and Alexei A. Efros
   and Jitendra Malik},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)},
   year={2018}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
@@ -438,7 +463,7 @@ hideblock('cvpr18f3dBib');
 </div>
 </div>
 <!--------------------------------------------------------------------------->
-
+<div class="year_heading"><br>2017<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="cvpr17drc">
 <img class="paper" src="figures/cvpr17drc.png" />
@@ -457,7 +482,7 @@ CVPR, 2017 <br/>
   and Tinghui Zhou
   and Alexei A. Efros
   and Jitendra Malik},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)},
   year={2017}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
@@ -486,7 +511,7 @@ CVPR, 2017 <br/>
   and Leonidas J. Guibas
   and Alexei A. Efros
   and Jitendra Malik},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)},
   year={2017}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
@@ -523,7 +548,7 @@ hideblock('3dv17hspBib');
 </div>
 </div>
 <!--------------------------------------------------------------------------->
-
+<div class="year_heading"><br>2016<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="pami16reconstruction">
 <img class="paper" src="figures/pami16reconstruction.png" />
@@ -581,7 +606,7 @@ hideblock('eccv16flowBib');
 </div>
 </div>
 <!--------------------------------------------------------------------------->
-
+<div class="year_heading"><br>2015<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="iccv15pose">
 <img class="paper" src="figures/iccv15poseInd.png" />
@@ -652,7 +677,7 @@ CVPR, 2015 <br/>
   author    = {Shubham Tulsiani and Jitendra Malik},
   title     = {Viewpoints and Keypoints},
   year={2015},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)}
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
 hideblock('cvpr15vpsAbs');
@@ -680,7 +705,7 @@ CVPR, 2015  <strong style="color:red">(Best Student Paper Award)</strong><br/>
                Jitendra Malik},
   title     = {Category-Specific Object Reconstruction from a Single Image},
   year={2015},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)}
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
 hideblock('cvpr15csdmAbs');
@@ -708,7 +733,7 @@ CVPR, 2015 <br/>
                Jitendra Malik},
   title     = {Virtual View Networks for Object Reconstruction},
   year={2015},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)}
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
 hideblock('cvpr15vvnAbs');
@@ -717,7 +742,7 @@ hideblock('cvpr15vvnBib');
 </div>
 </div>
 <!--------------------------------------------------------------------------->
-
+<div class="year_heading"><br>2013<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="uist13colors">
 <img class="paper" src="figures/uist13.png" />
