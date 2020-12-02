@@ -52,9 +52,76 @@ shubhtuls AT {cmu.edu (preferred), fb.com}
 <div class="section">
 <h2> Publications </h2><br><div class="year_heading"><br>2020<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
+<div class="paper" id="neurips20audio">
+<img class="paper" src="https://vdean.github.io/images/audio-curiosity.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">See, Hear, Explore: Curiosity via Audio-Visual Association</b> <br/> 
+Victoria Dean, <strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
+NeurIPS, 2020 <br/> 
+<a href="https://vdean.github.io/resources/audio-curiosity2020.pdf">pdf </a>  &nbsp <a href="https://vdean.github.io/audio-curiosity.html">project page </a>  &nbsp <a href="javascript:toggleblock('neurips20audioAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('neurips20audioBib')">bibtex </a>  &nbsp <a href="https://youtu.be/DMiW5hwsoeo">video </a>  &nbsp <a href="https://github.com/vdean/audio-curiosity">code </a> </p>
+<div class="papermeta" id="neurips20audioMeta">
+<em id="neurips20audioAbs">Exploration is one of the core challenges in reinforcement learning. A common formulation of curiosity-driven exploration uses the difference between the real future and the future predicted by a learned model. However, predicting the future is an inherently difficult task which can be ill-posed in the face of stochasticity. In this paper, we introduce an alternative form of curiosity that rewards novel associations between different senses. Our approach exploits multiple modalities to provide a stronger signal for more efficient exploration. Our method is inspired by the fact that, for humans, both sight and sound play a critical role in exploration. We present results on several Atari environments and Habitat (a photorealistic navigation simulator), showing the benefits of using an audio-visual association model for intrinsically guiding learning agents in the absence of external rewards.</em>
+<pre xml:space="preserve" id="neurips20audioBib">
+
+@article{dean2020see,
+  title={See, hear, explore: Curiosity via audio-visual association},
+  author={Dean, Victoria and Tulsiani, Shubham and Gupta, Abhinav},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('neurips20audioAbs');
+hideblock('neurips20audioBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="corl20vime">
+<img class="paper" src="https://thumbs.gfycat.com/ThreadbareOldfashionedDalmatian-size_restricted.gif" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Visual Imitation Made Easy</b> <br/> 
+Sarah Young, Dhiraj Gandhi, <strong>Shubham Tulsiani</strong>, Abhinav Gupta, Pieter Abbeel, Lerrel Pinto <br/> 
+CORL, 2020 <br/> 
+<a href="https://arxiv.org/pdf/2008.04899.pdf">pdf </a>  &nbsp <a href="https://dhiraj100892.github.io/Visual-Imitation-Made-Easy/">project page </a>  &nbsp <a href="javascript:toggleblock('corl20vimeAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('corl20vimeBib')">bibtex </a>  &nbsp <a href="https://www.youtube.com/watch?v=opizQ4bXSpk">video </a>  &nbsp <a href="https://github.com/sarahisyoung/Visual-Imitation-Made-Easy/">code </a> </p>
+<div class="papermeta" id="corl20vimeMeta">
+<em id="corl20vimeAbs">Visual imitation learning provides a framework for learning complex
+manipulation behaviors by leveraging human demonstrations. However, current
+interfaces for imitation such as kinesthetic teaching or teleoperation prohibitively
+restrict our ability to efficiently collect large-scale data in the wild. Obtaining such
+diverse demonstration data is paramount for the generalization of learned skills to
+novel scenarios. In this work, we present an alternate interface for imitation that
+simplifies the data collection process while allowing for easy transfer to robots.
+We use commercially available reacher-grabber assistive tools both as a data collection device and as the robot’s end-effector. To extract action information from
+these visual demonstrations, we use off-the-shelf Structure from Motion (SfM)
+techniques in addition to training a finger detection network. We experimentally
+evaluate on two challenging tasks: non-prehensile pushing and prehensile stacking,
+with 1000 diverse demonstrations for each task. For both tasks, we use standard
+behavior cloning to learn executable policies from the previously collected offline demonstrations. To improve learning performance, we employ a variety of
+data augmentations and provide an extensive analysis of its effects. Finally, we
+demonstrate the utility of our interface by evaluating on real robotic scenarios with
+previously unseen objects and achieve a 87% success rate on pushing and a 62%
+success rate on stacking.</em>
+<pre xml:space="preserve" id="corl20vimeBib">
+
+@inProceedings{young2020vime,
+  title={Visual Imitation Made Easy},
+  author={Young, Sarah and Gandhi, Dhiraj and Tulsiani, Shubham and Gupta, Abhinav and Abbeel, Pieter and Pinto, Lerrel},
+  year={2020},
+  booktitle={Conference on Robot Learning (CORL)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('corl20vimeAbs');
+hideblock('corl20vimeBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
 <div class="paper" id="cvpr20acsm">
 <img class="paper" src="figures/cvpr20acsm.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Articulation-aware Canonical Surface Mapping</b> <br/> 
+<p><b id="papertitle">Articulation-aware Canonical Surface Mapping</b> <br/> 
 Nilesh Kulkarni, Abhinav Gupta, David Fouhey, <strong>Shubham Tulsiani</strong> <br/> 
 CVPR, 2020 <br/> 
 <a href="https://arxiv.org/pdf/2004.00614.pdf">pdf </a>  &nbsp <a href="https://nileshkulkarni.github.io/acsm/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr20acsmAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr20acsmBib')">bibtex </a>  &nbsp <a href="https://youtu.be/qgVwjkO2ltw">video </a>  &nbsp <a href="http://www.github.com/nileshkulkarni/acsm/">code </a> </p>
@@ -79,10 +146,10 @@ hideblock('cvpr20acsmBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="cvpr20force">
 <img class="paper" src="figures/cvpr20force.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Use the Force, Luke! Learning to Predict Physical Forces by Simulating Effects</b> <br/> 
+<p><b id="papertitle">Use the Force, Luke! Learning to Predict Physical Forces by Simulating Effects</b> <br/> 
 Kiana Ehsani, <strong>Shubham Tulsiani</strong>, Saurabh Gupta, Ali Farhadi, Abhinav Gupta <br/> 
 CVPR, 2020 <br/> 
-<a href="https://arxiv.org/pdf/2003.12045.pdf">pdf </a>  &nbsp <a href="https://ehsanik.github.io/forcecvpr2020/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr20forceAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr20forceBib')">bibtex </a> </p>
+<a href="https://arxiv.org/pdf/2003.12045.pdf">pdf </a>  &nbsp <a href="https://ehsanik.github.io/forcecvpr2020/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr20forceAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr20forceBib')">bibtex </a>  &nbsp <a href="https://github.com/ehsanik/touchTorch">code </a> </p>
 <div class="papermeta" id="cvpr20forceMeta">
 <em id="cvpr20forceAbs">When we humans look at a video of human-object interaction, we can not only infer what is happening but we can even extract actionable information and imitate those interactions. On the other hand, current recognition or geometric approaches lack the physicality of action representation. In this paper, we take a step towards more physical understanding of actions. We address the problem of inferring contact points and the physical forces from videos of humans interacting with objects. One of the main challenges in tackling this problem is obtaining ground-truth labels for forces. We sidestep this problem by instead using a physics simulator for supervision. Specifically, we use a simulator to predict effects, and enforce that estimated forces must lead to same effect as depicted in the video. Our quantitative and qualitative results show that (a) we can predict meaningful forces from videos whose effects lead to accurate imitation of the motions observed, (b) by jointly optimizing for contact point and force prediction, we can improve the performance on both tasks in comparison to independent training, and (c) we can learn a representation from this model that generalizes to novel objects using few shot examples.</em>
 <pre xml:space="preserve" id="cvpr20forceBib">
@@ -104,7 +171,7 @@ hideblock('cvpr20forceBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="iclr20synergy">
 <img class="paper" src="figures/iclr20synergy.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Intrinsic Motivation for Encouraging Synergistic Behavior</b> <br/> 
+<p><b id="papertitle">Intrinsic Motivation for Encouraging Synergistic Behavior</b> <br/> 
 Rohan Chitnis, <strong>Shubham Tulsiani</strong>, Saurabh Gupta, Abhinav Gupta <br/> 
 ICLR, 2020 <br/> 
 <a href="https://openreview.net/pdf?id=SJleNCNtDH">pdf </a>  &nbsp <a href="https://sites.google.com/view/iclr2020-synergistic">project page </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20synergyBib')">bibtex </a> </p>
@@ -129,7 +196,7 @@ hideblock('iclr20synergyBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="iclr20motor">
 <img class="paper" src="figures/iclr20motor.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Discovering Motor Programs by Recomposing Demonstrations</b> <br/> 
+<p><b id="papertitle">Discovering Motor Programs by Recomposing Demonstrations</b> <br/> 
 Tanmay Shankar, <strong>Shubham Tulsiani</strong>, Lerrel Pinto, Abhinav Gupta <br/> 
 ICLR, 2020 <br/> 
 <a href="https://openreview.net/pdf?id=rkgHY0NYwr">pdf </a>  &nbsp <a href="javascript:toggleblock('iclr20motorAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iclr20motorBib')">bibtex </a> </p>
@@ -155,7 +222,7 @@ hideblock('iclr20motorBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="icra20schema">
 <img class="paper" src="figures/icra20schema.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Efficient Bimanual Manipulation using Learned Task Schemas</b> <br/> 
+<p><b id="papertitle">Efficient Bimanual Manipulation using Learned Task Schemas</b> <br/> 
 Rohan Chitnis, <strong>Shubham Tulsiani</strong>, Saurabh Gupta, Abhinav Gupta <br/> 
 ICRA, 2020 <br/> 
 <a href="https://arxiv.org/pdf/1909.13874.pdf">preprint </a>  &nbsp <a href="javascript:toggleblock('icra20schemaAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('icra20schemaBib')">bibtex </a>  &nbsp <a href="https://www.youtube.com/watch?v=TBUEHk37a64">video </a> </p>
@@ -304,56 +371,25 @@ hideblock('iccv19craftBib');
 <!--------------------------------------------------------------------------->
 
 <!--------------------------------------------------------------------------->
-<div class="paper" id="pami19drc">
-<img class="paper" src="figures/pami19drc.png" />
-<p><b id="papertitle">Multi-view Supervision for Single-view Reconstruction via Differentiable Ray Consistency</b> <br/> 
-<strong>Shubham Tulsiani</strong>, Tinghui Zhou, Alexei A. Efros, Jitendra Malik <br/> 
-TPAMI, 2019  (journal version combining <a href="https://shubhtuls.github.io/drc/">DRC</a> and <a href="https://shubhtuls.github.io/mvcSnP/">MVC</a>) <br/> 
-<a href="papers/pami19drc.pdf">pdf </a>  &nbsp <a href="javascript:toggleblock('pami19drcAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('pami19drcBib')">bibtex </a>  &nbsp <a href="https://github.com/shubhtuls/drc">code </a> </p>
-<div class="papermeta" id="pami19drcMeta">
-<em id="pami19drcAbs">We study the notion of consistency between a 3D shape and a 2D observation and propose a differentiable formulation which allows computing gradients of the 3D shape given an observation from an arbitrary view. We do so by reformulating view consistency using a differentiable ray consistency (DRC) term. We show that this formulation can be incorporated in a learning framework to leverage different types of multi-view observations e.g. foreground masks, depth, color images, semantics etc. as supervision for learning single-view 3D prediction. We present empirical analysis of our technique in a controlled setting. We also show that this approach allows us to improve over existing techniques for single-view reconstruction of objects from the PASCAL VOC dataset.</em>
-<pre xml:space="preserve" id="pami19drcBib">
+<div class="paper" id="arxiv19mvs">
+<img class="paper" src="figures/arxiv19mvs.png" />
+<p><b id="papertitle">Learning Unsupervised Multi-View Stereopsis via Robust Photometric Consistency</b> <br/> 
+Tejas Khot*, Shubham Agrawal*, <strong>Shubham Tulsiani</strong>, Christoph Mertz, Simon Lucey, Martial Hebert <br/> 
+arXiv preprint, 2019 <br/> 
+<a href="https://arxiv.org/pdf/1905.02706.pdf">pdf </a>  &nbsp <a href="https://tejaskhot.github.io/unsup_mvs/">project page </a>  &nbsp <a href="javascript:toggleblock('arxiv19mvsAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('arxiv19mvsBib')">bibtex </a>  &nbsp <a href="https://github.com/tejaskhot/unsup_mvs">code </a> </p>
+<div class="papermeta" id="arxiv19mvsMeta">
+<em id="arxiv19mvsAbs">We present a learning based approach for multi-view stereopsis (MVS). While current deep MVS methods achieve impressive results, they crucially rely on ground-truth 3D training data, and acquisition of such precise 3D geometry for supervision is a major hurdle. Our framework instead leverages photometric consistency between multiple views as supervisory signal for learning depth prediction in a wide baseline MVS setup. However, naively applying photo consistency constraints is undesirable due to occlusion and lighting changes across views. To overcome this, we propose a robust loss formulation that: a) enforces first order consistency and b) for each point, selectively enforces consistency with some views, thus implicitly handling occlusions. We demonstrate our ability to learn MVS without 3D supervision using a real dataset, and show that each component of our proposed robust loss results in a significant improvement. We qualitatively observe that our reconstructions are often more complete than the acquired ground truth, further showing the merits of this approach. Lastly, our learned model generalizes to novel settings, and our approach allows adaptation of existing CNNs to datasets without ground-truth 3D by unsupervised finetuning.</em>
+<pre xml:space="preserve" id="arxiv19mvsBib">
 
-@article{drcTulsiani19,
-  title={Multi-view Supervision for Single-view Reconstruction
-  via Differentiable Ray Consistency},
-  author = {Shubham Tulsiani
-  and Tinghui Zhou
-  and Alexei A. Efros
-  and Jitendra Malik},
-  journal = {TPAMI},
-  year = {2019},
+@article{khot2019learning,
+  title={Learning Unsupervised Multi-View Stereopsis via Robust Photometric Consistency},
+  author={Khot, Tejas and Agrawal, Shubham and Tulsiani, Shubham and Mertz, Christoph and Lucey, Simon and Hebert, Martial},
+  journal={arXiv preprint arXiv:1905.02706},
+  year={2019}
 }</pre></td>
 <script language="javascript" type="text/javascript" xml:space="preserve">
-hideblock('pami19drcAbs');
-hideblock('pami19drcBib');
-</script>
-</div>
-</div>
-<!--------------------------------------------------------------------------->
-
-<!--------------------------------------------------------------------------->
-<div class="paper" id="pami19hsp">
-<img class="paper" src="figures/pami19hsp.png" />
-<p><b id="papertitle">Hierarchical Surface Prediction</b> <br/> 
-Christian H&auml;ne, <strong>Shubham Tulsiani</strong>, Jitendra Malik <br/> 
-TPAMI, 2019 (journal version of <a href="https://arxiv.org/pdf/1704.00710.pdf">HSP</a>) <br/> 
-<a href="papers/pami19hsp.pdf">pdf </a>  &nbsp <a href="javascript:toggleblock('pami19hspAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('pami19hspBib')">bibtex </a>  &nbsp <a href="https://github.com/chaene/hsp">code </a> </p>
-<div class="papermeta" id="pami19hspMeta">
-<em id="pami19hspAbs">Recently, Convolutional Neural Networks have shown promising results for 3D geometry prediction. They can make predictions from very little input data such as a single color image. A major limitation of such approaches is that they only predict a coarse resolution voxel grid, which does not capture the surface of the objects well. We propose a general framework, called hierarchical surface prediction (HSP), which facilitates prediction of high resolution voxel grids. The main insight is that it is sufficient to predict high resolution voxels around the predicted surfaces. The exterior and interior of the objects can be represented with coarse resolution voxels. This allows us to predict significantly higher resolution voxel grids around the surface, from which triangle meshes can be extracted. Additionally it allows us to predict properties such as surface color which are only defined on the surface. Our approach is not dependent on a specific input type. We show results for geometry prediction from color images and depth images. Our analysis shows that our high resolution predictions are more accurate than low resolution predictions.</em>
-<pre xml:space="preserve" id="pami19hspBib">
-
-@article{hspHane19,
-  author = {Christian H{\"a}ne and
-  Shubham Tulsiani and
-  Jitendra Malik},
-  title = {Hierarchical Surface Prediction},
-  journal = {TPAMI},
-  year = {2019},
-}</pre></td>
-<script language="javascript" type="text/javascript" xml:space="preserve">
-hideblock('pami19hspAbs');
-hideblock('pami19hspBib');
+hideblock('arxiv19mvsAbs');
+hideblock('arxiv19mvsBib');
 </script>
 </div>
 </div>
