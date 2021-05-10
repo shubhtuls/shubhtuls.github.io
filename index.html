@@ -50,11 +50,61 @@ shubhtuls AT {cmu.edu (preferred), fb.com}
 </div>
 
 <div class="section">
-<h2> Publications </h2><br><div class="year_heading"><br>2020<hr width="220px" align="left"></div>
+<h2> Publications </h2><br><div class="year_heading"><br>2021<hr width="220px" align="left"></div>
+<!--------------------------------------------------------------------------->
+<div class="paper" id="icml21pixel">
+<img class="paper" src="figures/icml21pixel.gif" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">PixelTransformer: Sample Conditioned Signal Generation</b> <br/> 
+<strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
+ICML, 2021 <br/> 
+<a href="https://arxiv.org/pdf/2103.15813.pdf">pdf </a>  &nbsp <a href="https://shubhtuls.github.io/PixelTransformer/">project page </a>  &nbsp <a href="javascript:toggleblock('icml21pixelAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('icml21pixelBib')">bibtex </a> </p>
+<div class="papermeta" id="icml21pixelMeta">
+<em id="icml21pixelAbs">We propose a generative model that can infer a distribution for the underlying spatial signal conditioned on sparse samples e.g. plausible images given a few observed pixels. In contrast to sequential autoregressive generative models, our model allows conditioning on arbitrary samples and can answer distributional queries for any location. We empirically validate our approach across three image datasets and show that we learn to generate diverse and meaningful samples, with the distribution variance reducing given more observed pixels. We also show that our approach is applicable beyond images and can allow generating other types of spatial outputs e.g. polynomials, 3D shapes, and videos.</em>
+<pre xml:space="preserve" id="icml21pixelBib">
+
+@inProceedings{tulsiani2021pixel,
+  title={PixelTransformer: Sample Conditioned Signal Generation},
+  author={Tulsiani, Shubham and  Gupta, Abhinav},
+  year={2021},
+  booktitle={International Conference on Machine Learning (ICML)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('icml21pixelAbs');
+hideblock('icml21pixelBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="cvpr21mesh">
+<img class="paper" src="https://judyye.github.io/ShSMesh/data/teaser.gif" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Shelf-Supervised Mesh Prediction in the Wild</b> <br/> 
+Yufei Ye, <strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
+CVPR, 2021 <br/> 
+<a href="https://arxiv.org/pdf/2102.06195.pdf">pdf </a>  &nbsp <a href="https://judyye.github.io/ShSMesh/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr21meshAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr21meshBib')">bibtex </a>  &nbsp <a href="#">code </a> </p>
+<div class="papermeta" id="cvpr21meshMeta">
+<em id="cvpr21meshAbs">We aim to infer 3D shape and pose of object from a single image and propose a learning-based approach that can train from unstructured image collections, supervised by only segmentation outputs from off-the-shelf recognition systems (i.e. 'shelf-supervised'). We first infer a volumetric representation in a canonical frame, along with the camera pose. We enforce the representation geometrically consistent with both appearance and masks, and also that the synthesized novel views are indistinguishable from image collections. The coarse volumetric prediction is then converted to a mesh-based representation, which is further refined in the predicted camera frame. These two steps allow both shape-pose factorization from image collections and per-instance reconstruction in finer details. We examine the method on both synthetic and real-world datasets and demonstrate its scalability on 50 categories in the wild, an order of magnitude more classes than existing works.</em>
+<pre xml:space="preserve" id="cvpr21meshBib">
+
+@inProceedings{ye2021shelf,
+  title={Shelf-Supervised Mesh Prediction in the Wild},
+  author={Ye, Yufei and Tulsiani, Shubham and  Gupta, Abhinav},
+  year={2021},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('cvpr21meshAbs');
+hideblock('cvpr21meshBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+<div class="year_heading"><br>2020<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="neurips20audio">
 <img class="paper" src="https://vdean.github.io/images/audio-curiosity.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">See, Hear, Explore: Curiosity via Audio-Visual Association</b> <br/> 
+<p><b id="papertitle">See, Hear, Explore: Curiosity via Audio-Visual Association</b> <br/> 
 Victoria Dean, <strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
 NeurIPS, 2020 <br/> 
 <a href="https://vdean.github.io/resources/audio-curiosity2020.pdf">pdf </a>  &nbsp <a href="https://vdean.github.io/audio-curiosity.html">project page </a>  &nbsp <a href="javascript:toggleblock('neurips20audioAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('neurips20audioBib')">bibtex </a>  &nbsp <a href="https://youtu.be/DMiW5hwsoeo">video </a>  &nbsp <a href="https://github.com/vdean/audio-curiosity">code </a> </p>
@@ -80,7 +130,7 @@ hideblock('neurips20audioBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="corl20vime">
 <img class="paper" src="https://thumbs.gfycat.com/ThreadbareOldfashionedDalmatian-size_restricted.gif" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Visual Imitation Made Easy</b> <br/> 
+<p><b id="papertitle">Visual Imitation Made Easy</b> <br/> 
 Sarah Young, Dhiraj Gandhi, <strong>Shubham Tulsiani</strong>, Abhinav Gupta, Pieter Abbeel, Lerrel Pinto <br/> 
 CORL, 2020 <br/> 
 <a href="https://arxiv.org/pdf/2008.04899.pdf">pdf </a>  &nbsp <a href="https://dhiraj100892.github.io/Visual-Imitation-Made-Easy/">project page </a>  &nbsp <a href="javascript:toggleblock('corl20vimeAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('corl20vimeBib')">bibtex </a>  &nbsp <a href="https://www.youtube.com/watch?v=opizQ4bXSpk">video </a>  &nbsp <a href="https://github.com/sarahisyoung/Visual-Imitation-Made-Easy/">code </a> </p>
