@@ -52,12 +52,37 @@ shubhtuls AT {cmu.edu (preferred), fb.com}
 <div class="section">
 <h2> Publications </h2><br><div class="year_heading"><br>2021<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
+<div class="paper" id="iccv21act">
+<img class="paper" src="https://cs.stanford.edu/~kaichun/papers/where2act.png" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Where2Act: From Pixels to Actions for Articulated 3D Objects</b> <br/> 
+Kaichun Mo, Leonidas J. Guibas, Mustafa Mukadam, Abhinav Gupta, <strong>Shubham Tulsiani</strong> <br/> 
+ICCV, 2021 <br/> 
+<a href="https://arxiv.org/pdf/2101.02692.pdf">pdf </a>  &nbsp <a href="https://cs.stanford.edu/~kaichun/where2act/">project page </a>  &nbsp <a href="javascript:toggleblock('iccv21actAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv21actBib')">bibtex </a>  &nbsp <a href="https://github.com/daerduoCarey/where2act">code </a> </p>
+<div class="papermeta" id="iccv21actMeta">
+<em id="iccv21actAbs">One of the fundamental goals of visual perception is to allow agents to meaningfully interact with their environment. In this paper, we take a step towards that long-term goal -- we extract highly localized actionable information related to elementary actions such as pushing or pulling for articulated objects with movable parts. For example, given a drawer, our network predicts that applying a pulling force on the handle opens the drawer. We propose, discuss, and evaluate novel network architectures that given image and depth data, predict the set of actions possible at each pixel, and the regions over articulated parts that are likely to move under the force. We propose a learning-from-interaction framework with an online data sampling strategy that allows us to train the network in simulation (SAPIEN) and generalizes across categories. But more importantly, our learned models even transfer to real-world data.</em>
+<pre xml:space="preserve" id="iccv21actBib">
+
+@inProceedings{mo2021where2act,
+  title={Where2Act: From Pixels to Actions for Articulated 3D Objects},
+  author={Mo, Kaichun and Guibas, Leonidas and Mukadam, Mustafa and Gupta, Abhinav and Tulsiani, Shubham},
+  year={2021},
+  booktitle={International Conference on Computer Vision (ICCV)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('iccv21actAbs');
+hideblock('iccv21actBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
 <div class="paper" id="icml21pixel">
 <img class="paper" src="figures/icml21pixel.gif" />
 <p> <strong style="color:red">[New]</strong> <b id="papertitle">PixelTransformer: Sample Conditioned Signal Generation</b> <br/> 
 <strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
 ICML, 2021 <br/> 
-<a href="https://arxiv.org/pdf/2103.15813.pdf">pdf </a>  &nbsp <a href="https://shubhtuls.github.io/PixelTransformer/">project page </a>  &nbsp <a href="javascript:toggleblock('icml21pixelAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('icml21pixelBib')">bibtex </a> </p>
+<a href="https://arxiv.org/pdf/2103.15813.pdf">pdf </a>  &nbsp <a href="https://shubhtuls.github.io/PixelTransformer/">project page </a>  &nbsp <a href="javascript:toggleblock('icml21pixelAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('icml21pixelBib')">bibtex </a>  &nbsp <a href="https://github.com/shubhtuls/PixelTransformer">code </a> </p>
 <div class="papermeta" id="icml21pixelMeta">
 <em id="icml21pixelAbs">We propose a generative model that can infer a distribution for the underlying spatial signal conditioned on sparse samples e.g. plausible images given a few observed pixels. In contrast to sequential autoregressive generative models, our model allows conditioning on arbitrary samples and can answer distributional queries for any location. We empirically validate our approach across three image datasets and show that we learn to generate diverse and meaningful samples, with the distribution variance reducing given more observed pixels. We also show that our approach is applicable beyond images and can allow generating other types of spatial outputs e.g. polynomials, 3D shapes, and videos.</em>
 <pre xml:space="preserve" id="icml21pixelBib">
@@ -82,7 +107,7 @@ hideblock('icml21pixelBib');
 <p> <strong style="color:red">[New]</strong> <b id="papertitle">Shelf-Supervised Mesh Prediction in the Wild</b> <br/> 
 Yufei Ye, <strong>Shubham Tulsiani</strong>, Abhinav Gupta <br/> 
 CVPR, 2021 <br/> 
-<a href="https://arxiv.org/pdf/2102.06195.pdf">pdf </a>  &nbsp <a href="https://judyye.github.io/ShSMesh/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr21meshAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr21meshBib')">bibtex </a>  &nbsp <a href="#">code </a> </p>
+<a href="https://arxiv.org/pdf/2102.06195.pdf">pdf </a>  &nbsp <a href="https://judyye.github.io/ShSMesh/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr21meshAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr21meshBib')">bibtex </a>  &nbsp <a href="https://github.com/JudyYe/shelf-sup-mesh">code </a> </p>
 <div class="papermeta" id="cvpr21meshMeta">
 <em id="cvpr21meshAbs">We aim to infer 3D shape and pose of object from a single image and propose a learning-based approach that can train from unstructured image collections, supervised by only segmentation outputs from off-the-shelf recognition systems (i.e. 'shelf-supervised'). We first infer a volumetric representation in a canonical frame, along with the camera pose. We enforce the representation geometrically consistent with both appearance and masks, and also that the synthesized novel views are indistinguishable from image collections. The coarse volumetric prediction is then converted to a mesh-based representation, which is further refined in the predicted camera frame. These two steps allow both shape-pose factorization from image collections and per-instance reconstruction in finer details. We examine the method on both synthetic and real-world datasets and demonstrate its scalability on 50 categories in the wild, an order of magnitude more classes than existing works.</em>
 <pre xml:space="preserve" id="cvpr21meshBib">
