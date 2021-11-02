@@ -1,4 +1,41 @@
 // from: http://www.robots.ox.ac.uk/~vedaldi/assets/hidebib.js
+function hideunselected()
+{
+    var el = document.getElementsByTagName("div") ;
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "paper") {
+            if (el[i] .dataset.selected == 'n'){
+                el [i] .style.display = 'none' ;
+            }
+        }
+    }
+
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "year_heading") {
+            el [i] .style.display = 'none' ;
+        }
+    }
+}
+
+
+function showunselected()
+{
+    var el = document.getElementsByTagName("div") ;
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "paper") {
+            if (el[i] .dataset.selected == 'n'){
+                el [i] .style.display = 'block' ;
+            }
+        }
+    }
+
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "year_heading") {
+            el [i] .style.display = 'block' ;
+        }
+    }
+}
+
 function hideallbibs()
 {
     var el = document.getElementsByTagName("div") ;
