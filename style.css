@@ -122,6 +122,13 @@ div.paper {
   padding: 1em 1em 0em 1em;
 }
 
+div.prospective {
+  clear: both;
+  background: #f7f7f7;
+  font-size: 14px;
+  padding: 1em 1em 0em 1em;
+}
+
 div.year_heading
 {
 	color: #3B3B3B;
