@@ -1,5 +1,5 @@
 // from: http://www.robots.ox.ac.uk/~vedaldi/assets/hidebib.js
-function hideunselected()
+function showselected()
 {
     var el = document.getElementsByTagName("div") ;
     for (var i = 0 ; i < el.length ; ++i) {
@@ -15,10 +15,12 @@ function hideunselected()
             el [i] .style.display = 'none' ;
         }
     }
+    document.getElementById('select').style = 'text-decoration:underline';
+    document.getElementById('unselect').style = '';
 }
 
 
-function showunselected()
+function showall()
 {
     var el = document.getElementsByTagName("div") ;
     for (var i = 0 ; i < el.length ; ++i) {
@@ -34,6 +36,8 @@ function showunselected()
             el [i] .style.display = 'block' ;
         }
     }
+    document.getElementById('unselect').style = 'text-decoration:underline';
+    document.getElementById('select').style = '';
 }
 
 function hideallbibs()
