@@ -135,7 +135,82 @@ We do not have any short-term positions at this time.
 </div>
 
 <div class="section">
-<h2> Publications (<a href="javascript:showselected()" id="select" >selected</a> | <a href="javascript:showall()" id="unselect" >all</a>) </h2><br><div class="year_heading" data-selected="n"><br>2021<hr width="220px" align="left"></div>
+<h2> Publications (<a href="javascript:showselected()" id="select" >selected</a> | <a href="javascript:showall()" id="unselect" >all</a>) </h2><br><div class="year_heading" data-selected="n"><br>2022<hr width="220px" align="left"></div>
+<!--------------------------------------------------------------------------->
+<div class="paper" id="cvpr22ss3d" data-selected="y">
+<img class="paper" src="figures/cvpr22ss3d.gif" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">Pre-train, Self-train, Distill: A simple recipe for Supersizing 3D Reconstruction</b> <br/> 
+Kalyan Vasudev Alwala, Abhinav Gupta, <strong>Shubham Tulsiani</strong> <br/> 
+CVPR, 2022 <br/> 
+<a href="https://arxiv.org/pdf/2204.03642.pdf">pdf </a>  &nbsp <a href="https://shubhtuls.github.io/ss3d/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr22ss3dAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr22ss3dBib')">bibtex </a>  &nbsp <a href="https://github.com/shubhtuls/ss3d">code </a> </p>
+<div class="papermeta" id="cvpr22ss3dMeta">
+<em id="cvpr22ss3dAbs">Our work learns a unified model for single-view 3D reconstruction of objects from hundreds of semantic categories. As a scalable alternative to direct 3D supervision, our work relies on segmented image collections for learning 3D of generic categories. Unlike prior works that use similar supervision but learn independent category-specific models from scratch, our approach of learning a unified model simplifies the training process while also allowing the model to benefit from the common structure across categories. Using image collections from standard recognition datasets, we show that our approach allows learning 3D inference for over 150 object categories. We evaluate using two datasets and qualitatively and quantitatively show that our unified reconstruction approach improves over prior category-specific reconstruction baselines. Our final 3D reconstruction model is also capable of zero-shot inference on images from unseen object categories and we empirically show that increasing the number of training categories improves the reconstruction quality.</em>
+<pre xml:space="preserve" id="cvpr22ss3dBib">
+
+@inProceedings{vasudev2022ss3d,
+  title={Pre-train, Self-train, Distill: A simple recipe for Supersizing 3D Reconstruction},
+  author={Vasudev, Kalyan Alwala and  Gupta, Abhinav and Tulsiani, Shubham},
+  year={2022},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('cvpr22ss3dAbs');
+hideblock('cvpr22ss3dBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="cvpr22ihoi" data-selected="y">
+<img class="paper" src="figures/cvpr22ihoi.gif" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">What's in your hands? 3D Reconstruction of Generic Objects in Hands</b> <br/> 
+Yufei Ye, Abhinav Gupta, <strong>Shubham Tulsiani</strong> <br/> 
+CVPR, 2022 <br/> 
+<a href="#">pdf </a>  &nbsp <a href="https://judyye.github.io/ihoi/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr22ihoiAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr22ihoiBib')">bibtex </a>  &nbsp <a href="#">code </a> </p>
+<div class="papermeta" id="cvpr22ihoiMeta">
+<em id="cvpr22ihoiAbs">Our work aims to reconstruct hand-held objects  given a single RGB image. In contrast to prior works that typically assume known 3D templates and reduce the problem to 3D pose estimation, our work reconstructs  generic hand-held object without knowing their 3D templates. Our key insight is that hand articulation is highly predictive of the object shape, and we propose an approach that conditionally reconstructs the object based on the articulation and the visual input.  Given an image depicting a hand-held object, we first use off-the-shelf systems to estimate the underlying hand pose and then infer the object shape in a normalized hand-centric coordinate frame. We parameterized the object by signed distance which are inferred by an implicit network which leverages the information from both visual feature and  articulation-aware coordinates to process a query point.   We perform experiments across three datasets and show that our method consistently outperforms baselines and is able to reconstruct a diverse set of  objects. We analyze the benefits and robustness of explicit articulation conditioning and also show that this allows the hand pose estimation to further improve in test-time optimization.</em>
+<pre xml:space="preserve" id="cvpr22ihoiBib">
+
+@inProceedings{ye2022ihoi,
+  title={What's in your hands? 3D Reconstruction of Generic Objects in Hands},
+  author={Ye, Yufei and  Gupta, Abhinav and Tulsiani, Shubham},
+  year={2022},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('cvpr22ihoiAbs');
+hideblock('cvpr22ihoiBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------->
+<div class="paper" id="cvpr22autosdf" data-selected="n">
+<img class="paper" src="figures/cvpr22autosdf.gif" />
+<p> <strong style="color:red">[New]</strong> <b id="papertitle">AutoSDF: Shape Priors for 3D Completion, Reconstruction and Generation</b> <br/> 
+Paritosh Mittal*, Yen-Chi Cheng*, Maneesh Singh, <strong>Shubham Tulsiani</strong> <br/> 
+CVPR, 2022 <br/> 
+<a href="https://arxiv.org/pdf/2203.09516.pdf">pdf </a>  &nbsp <a href="https://yccyenchicheng.github.io/AutoSDF/">project page </a>  &nbsp <a href="javascript:toggleblock('cvpr22autosdfAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('cvpr22autosdfBib')">bibtex </a>  &nbsp <a href="https://github.com/yccyenchicheng/AutoSDF/">code </a> </p>
+<div class="papermeta" id="cvpr22autosdfMeta">
+<em id="cvpr22autosdfAbs">Powerful priors allow us to perform inference with insufficient information. In this paper, we propose an autoregressive prior for 3D shapes to solve multimodal 3D tasks such as shape completion, reconstruction, and generation. We model the distribution over 3D shapes as a non-sequential autoregressive distribution over a discretized, low-dimensional, symbolic grid-like latent representation of 3D shapes. This enables us to represent distributions over 3D shapes conditioned on information from an arbitrary set of spatially anchored query locations and thus perform shape completion in such arbitrary settings (e.g., generating a complete chair given only a view of the back leg). We also show that the learned autoregressive prior can be leveraged for conditional tasks such as single-view reconstruction and language-based generation. This is achieved by learning task-specific naive conditionals which can be approximated by light-weight models trained on minimal paired data. We validate the effectiveness of the proposed method using both quantitative and qualitative evaluation and show that the proposed method outperforms the specialized state-of-the-art methods trained for individual tasks.</em>
+<pre xml:space="preserve" id="cvpr22autosdfBib">
+
+@inproceedings{autosdf2022,
+  title={{AutoSDF}: Shape Priors for 3D Completion, Reconstruction and Generation},
+  author={Mittal, Paritosh and Cheng, Yen-Chi and Singh, Maneesh and Tulsiani, Shubham},
+  booktitle={CVPR},
+  year={2022}
+}</pre></td>
+<script language="javascript" type="text/javascript" xml:space="preserve">
+hideblock('cvpr22autosdfAbs');
+hideblock('cvpr22autosdfBib');
+</script>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+<div class="year_heading" data-selected="n"><br>2021<hr width="220px" align="left"></div>
 <!--------------------------------------------------------------------------->
 <div class="paper" id="neurips21ners" data-selected="y">
 <img class="paper" src="figures/neurips21ners.gif" />
@@ -164,7 +239,7 @@ hideblock('neurips21nersBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="neurips21nrns" data-selected="n">
 <img class="paper" src="figures/neurips21nrns.jpg" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">No RL, No Simulation: Learning to Navigate without Navigating</b> <br/> 
+<p><b id="papertitle">No RL, No Simulation: Learning to Navigate without Navigating</b> <br/> 
 Meera Hahn, Devendra Chaplot, <strong>Shubham Tulsiani</strong>, Mustafa Mukadam, James M. Rehg, Abhinav Gupta <br/> 
 NeurIPS, 2021 <br/> 
 <a href="https://arxiv.org/pdf/2110.09470">pdf </a>  &nbsp <a href="https://meerahahn.github.io/nrns/">project page </a>  &nbsp <a href="javascript:toggleblock('neurips21nrnsAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('neurips21nrnsBib')">bibtex </a>  &nbsp <a href="https://github.com/meera1hahn/NRNS/">code </a> </p>
@@ -189,7 +264,7 @@ hideblock('neurips21nrnsBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="corl21planar" data-selected="n">
 <img class="paper" src="figures/corl21planar.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">A Differentiable Recipe for Learning Visual Non-Prehensile Planar Manipulation</b> <br/> 
+<p><b id="papertitle">A Differentiable Recipe for Learning Visual Non-Prehensile Planar Manipulation</b> <br/> 
 Bernardo Aceituno, Alberto Rodriguez, <strong>Shubham Tulsiani</strong>, Abhinav Gupta, Mustafa Mukadam <br/> 
 CoRL, 2021 <br/> 
 <a href="https://openreview.net/pdf?id=f7KaqYLO3iE">pdf </a>  &nbsp <a href="javascript:toggleblock('corl21planarAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('corl21planarBib')">bibtex </a> </p>
@@ -214,7 +289,7 @@ hideblock('corl21planarBib');
 <!--------------------------------------------------------------------------->
 <div class="paper" id="iccv21act" data-selected="y">
 <img class="paper" src="https://cs.stanford.edu/~kaichun/papers/where2act.png" />
-<p> <strong style="color:red">[New]</strong> <b id="papertitle">Where2Act: From Pixels to Actions for Articulated 3D Objects</b> <br/> 
+<p><b id="papertitle">Where2Act: From Pixels to Actions for Articulated 3D Objects</b> <br/> 
 Kaichun Mo, Leonidas J. Guibas, Mustafa Mukadam, Abhinav Gupta, <strong>Shubham Tulsiani</strong> <br/> 
 ICCV, 2021 <br/> 
 <a href="https://arxiv.org/pdf/2101.02692.pdf">pdf </a>  &nbsp <a href="https://cs.stanford.edu/~kaichun/where2act/">project page </a>  &nbsp <a href="javascript:toggleblock('iccv21actAbs')">abstract </a>  &nbsp <a href="javascript:toggleblock('iccv21actBib')">bibtex </a>  &nbsp <a href="https://github.com/daerduoCarey/where2act">code </a> </p>
@@ -1057,7 +1132,7 @@ hideblock('uist13colorsBib');
 <!--------------------------------------------------------------------------->
 
  <script language="javascript" type="text/javascript" xml:space="preserve">
-showselected()</script>
+showall()</script>
 
 <!--------------------------------------------------------------------------->
 <!--- TEMPLATE
