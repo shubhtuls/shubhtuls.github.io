@@ -91,6 +91,10 @@ img {
   border: none;
 }
 
+video {
+  border: none;
+}
+
 li {
   padding-bottom: 0.5em;
   margin-left: 1.4em;
@@ -150,6 +154,13 @@ div.paper div.wide {
 }
 
 img.paper {
+	margin-right: 2em;
+  margin-bottom: 0.5em;
+  float: left;
+  width: 200px;
+}
+
+video.paper {
 	margin-right: 2em;
   margin-bottom: 0.5em;
   float: left;
