@@ -81,3 +81,36 @@ function hideblock(blockId)
     var block = document.getElementById(blockId);
     block.style.display = 'none' ;
 }
+
+// Lazy autoplay videos only when visible
+document.addEventListener('DOMContentLoaded', function() {
+    var videos = document.querySelectorAll('video.paper');
+    if (!videos.length || !('IntersectionObserver' in window)) return;
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            var video = entry.target;
+            if (entry.isIntersecting) {
+                // Set up time-range looping if data attributes present
+                if (video.dataset.tStart && !video._loopSetup) {
+                    video._loopSetup = true;
+                    var tStart = parseFloat(video.dataset.tStart);
+                    var tEnd = parseFloat(video.dataset.tEnd);
+                    video.addEventListener('loadedmetadata', function() {
+                        video.currentTime = tStart;
+                    });
+                    video.addEventListener('timeupdate', function() {
+                        if (video.currentTime >= tEnd) video.currentTime = tStart;
+                    });
+                }
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: 0.25 });
+
+    videos.forEach(function(video) {
+        observer.observe(video);
+    });
+});
